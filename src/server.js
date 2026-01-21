@@ -6,9 +6,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req,res) => {
-    res.json({message: "Hellow , I am a professional devops enggineer"})
+    res.json({message: "Hellow , I am a professional devops engineer"})
 });
 
 app.listen(process.env.PORT, ()=>{
-    console.log(`server is listen on port: ${process.env.PORT}`)
+    console.log(`server is listen on port: ${PORT}`)
 });
