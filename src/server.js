@@ -9,6 +9,6 @@ app.get('/', (req,res) => {
     res.json({message: "Hellow , I am a professional devops engineer"})
 });
 
-app.listen(process.env.PORT, ()=>{
+app.listen(PORT, ()=>{
     console.log(`server is listen on port: ${PORT}`)
 });
