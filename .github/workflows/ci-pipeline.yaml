@@ -3,8 +3,6 @@ name: CI Express Backend
 on:
   push:
     branches: ['main']
-  pull_request:
-    branches: ['main']
 
 jobs:
   ci:
@@ -17,7 +15,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           node-version: 20
-          cache: 'pnpm'
 
       - name: Install pnpm
         run: npm install -g pnpm
